@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Base Apparel | Coming Soon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script  type = "text/javascript" src="./index.js"></script> 
 </head>
 <body class="font-body">
-    <div class="flex  min-h-screen">
-        <div class="flex-6 bg-hero h-auto bg-cover pl-40">
-            <div class="mt-12 mb-20">
-                <img src="./images/logo.svg" alt="logo">
+    <div class="flex flex-col min-h-screen md:flex-row">
+        <div class="bg-wallpaper h-auto bg-cover flex-5 lg:pl-40 lg:flex-6">
+            <div class="px-10 my-8 md:mb-20 md:mt-12">
+                <img src="./images/logo.svg" alt="logo" class="w-24 md:w-36">
             </div>
-           <div class="max-w-md">
-               <h1 class="uppercase mb-7  text-7xl tracking-heading"><span class="block text-desaturated-red font-thin">We're</span><span class="block font-medium text-gray-800">coming</span><span class="block font-medium text-gray-800 "> soon</span></h1>
-               <p class="text-desaturated-red">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-           </div>
+            <div class="bg-mobile-hero bg-cover w-full h-80 mb-10 order-2 md:hidden"></div>
+           <div class="px-10 pb-20 max-w-md mx-auto text-center md:text-left md:max-w-lg md:mx-0">
+               <h1 class="text-5xl uppercase tracking-heading mb-7 md:text-6xl lg:text-7xl"><span class="block text-desaturated-red font-thin">We're</span><span class="block font-medium text-gray-800">coming</span><span class="block font-medium text-gray-800"> soon</span></h1>
+               <p class="text-desaturated-red leading-relaxed">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <form action="" class="mt-9 flex shadow-pink rounded-full"> 
+                    <input type="text" class="bg-transparent py-3 pl-6 w-full outline-none placeholder-desaturated-red" placeholder="Email Address">
+                    <img id="error-sign" src="./images/icon-error.svg" alt="error" class="w-5 h-5 my-auto mr-3 invisible">
+                    <button class="w-20 rounded-full bg-gradient-135-deg from-button-gradient-light to-button-gradient-darker md:w-28">
+                        <svg id="arrow" xmlns="http://www.w3.org/2000/svg" class="transform h-6 w-6 text-white mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </form>
+                <p id="error-msg" class="text-soft-red text-sm pl-6 mt-1 invisible">Please provide a valid email</p>
+            </div>
         </div>
-        <div class="bg-desktop-right w-full h-auto bg-cover">
-        </div>
+        <div class="hidden w-full h-auto bg-desktop-hero bg-cover md:block"></div>
     </div>
 </body>
 </html>
