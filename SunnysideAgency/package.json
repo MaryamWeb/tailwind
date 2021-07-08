@@ -1,0 +1,18 @@
+{
+  "name": "SunnysideAgency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/styles.css -o ./public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "auto": "^10.29.3",
+    "postcss": "^8.3.5",
+    "prefixer": "0.0.3",
+    "tailwindcss": "^2.2.4"
+  }
+}
