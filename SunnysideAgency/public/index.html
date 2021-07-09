@@ -7,7 +7,45 @@
     <title>Sunnyside</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-     
+<body class="font-Barlow"> 
+     <div class="bg-header-sm md:bg-header-lg w-full h-screen bg-cover bg-center text-white">
+        <nav class="px-4 py-5 flex justify-between items-center"> 
+            <h1>sunnyside</h1> 
+            <ul class="flex gap-6 items-center text-sm"> 
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li class="bg-white text-black rounded-full px-3 py-2">Contact</li>
+            </ul>
+        </nav>
+        <h1 class="text-5xl font-Fraunces uppercase tracking-widest text-center mt-20">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="mx-auto mt-20">
+    </div>
+    <section class="grid grid-cols-1 md:grid-cols-2">
+        <div class="card-box order-2 md:order-none">
+            <h2 class="card-header">Transform your brand</h2>
+            <p class="card-body">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you. </p>
+            <a href="#" class="card-link">Learn more</a>
+        </div> 
+        <div class="bg-egg-sm md:bg-egg-lg w-full bg-cover bg-center h-96 md:h-auto order-1 md:order-none"></div>
+        <div class="bg-pink-drink-sm md:bg-pink-drink w-full bg-cover bg-center h-96 md:h-auto order-3 md:order-none"></div>
+        <div class="card-box order-4 md:order-none">
+            <h2 class="card-header">Stand out to the right audience</h2>
+            <p class="card-body">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <a href="#" class="card-link">Learn more </a>
+        </div>
+        <div class="bg-cherry-sm md:bg-cherry-lg bg-cover min-h-lg md:min-h-md relative order-5 md:order-none">
+            <div class="absolute bottom-10 text-center px-10 opacity-50">
+                <h3 class="pb-4 font-Fraunces text-2xl">Graphic design</h3>
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention. </p>
+            </div>
+        </div>
+        <div class="bg-tangerine-sm md:bg-tangerine-lg bg-cover min-h-lg md:min-h-md relative order-6 md:order-none">
+            <div class="absolute bottom-10 text-center px-10 opacity-50">
+                <h3 class="pb-4 font-Fraunces text-2xl">Photography</h3>
+                <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image. </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-box {
+	@apply min-h-sm md:min-h-md flex flex-col justify-center px-10 md:px-20 text-center md:text-left;
+}
+.card-header {
+	@apply font-Fraunces text-4xl pb-5;
+}
+.card-body {
+	@apply text-gray-500 pb-5;
+}
+.card-link {
+	@apply font-Fraunces uppercase;
+}
