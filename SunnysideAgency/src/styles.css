@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .card-box {
-	@apply min-h-sm md:min-h-md flex flex-col justify-center px-10 md:px-20 text-center md:text-left;
+	@apply bg-peach min-h-sm md:min-h-md flex flex-col justify-center px-10 md:px-20 text-center md:text-left;
 }
 .card-header {
-	@apply font-Fraunces text-4xl pb-5;
+	@apply font-Fraunces font-black text-4xl pb-8;
 }
 .card-body {
-	@apply text-gray-500 pb-5;
+	@apply text-gray-500 pb-8 leading-loose;
 }
 .card-link {
 	@apply font-Fraunces uppercase;
+}
+.client-box {
+	@apply flex flex-col items-center py-10 md:py-0;
+}
+.client-body {
+	@apply mb-12 px-10 text-center text-gray-600 text-xl md:text-base;
+}
+.client-name {
+	@apply font-Fraunces pb-3 font-black text-xl md:text-base;
+}
+.client-job {
+	@apply text-gray-400;
 }

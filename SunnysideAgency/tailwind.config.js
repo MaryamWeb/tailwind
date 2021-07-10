@@ -21,13 +21,20 @@ module.exports = {
 			},
 			minHeight: {
 				sm: '24rem',
-				md: '30rem',
-				lg: '37rem'
+				md: '34rem',
+				lg: '42rem'
+			},
+			colors: {
+				peach: '#fffbf8',
+				'light-green': '#90d4c5',
+				'dark-green': '#2c7564'
 			}
 		}
 	},
 	variants: {
-		extend: {}
+		extend: {
+			fill: [ 'hover', 'focus' ]
+		}
 	},
 	plugins: []
 };

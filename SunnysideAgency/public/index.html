@@ -6,46 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunnyside</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script> 
 </head>
 <body class="font-Barlow"> 
-     <div class="bg-header-sm md:bg-header-lg w-full h-screen bg-cover bg-center text-white">
-        <nav class="px-4 py-5 flex justify-between items-center"> 
-            <h1>sunnyside</h1> 
-            <ul class="flex gap-6 items-center text-sm"> 
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li class="bg-white text-black rounded-full px-3 py-2">Contact</li>
-            </ul>
-        </nav>
-        <h1 class="text-5xl font-Fraunces uppercase tracking-widest text-center mt-20">We are creatives</h1>
-        <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="mx-auto mt-20">
-    </div>
-    <section class="grid grid-cols-1 md:grid-cols-2">
-        <div class="card-box order-2 md:order-none">
-            <h2 class="card-header">Transform your brand</h2>
-            <p class="card-body">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you. </p>
-            <a href="#" class="card-link">Learn more</a>
+    <div class="max-w-screen-2xl m-auto">
+        <div class="bg-header-sm md:bg-header-lg w-full h-screen bg-cover bg-center text-white">
+            <nav class="p-8 justify-between items-center hidden md:flex"> 
+                <a href="#" class="text-3xl font-black tracking-wider">sunnyside</a> 
+                <ul class="flex gap-8 items-center text-lg"> 
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#" class="font-Fraunces bg-white text-black rounded-full px-3 py-2 hover:text-white hover:bg-opacity-50 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="relative p-8 md:hidden">
+                <nav class="flex justify-between">
+                    <a href="#" class="text-2xl font-black tracking-wider">sunnyside</a> 
+                    <button id="menu"><img src="./images//icon-hamburger.svg" alt="menu"></button> 
+                </nav>
+                <ul id="nav-sm" class="absolute inset-x-0 flex flex-col gap-6 items-center m-auto bg-peach text-gray-500 py-10 mt-10 w-9/12">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li class="mt-3"><a href="#" class="font-Fraunces bg-yellow-400 text-black rounded-full px-8 py-4">Contact</a></li>
+                </ul> 
+            </div>
+            <h1 class="text-6xl font-Fraunces uppercase tracking-widest text-center mt-20">We are creatives</h1>
+            <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="mx-auto mt-20">
         </div> 
-        <div class="bg-egg-sm md:bg-egg-lg w-full bg-cover bg-center h-96 md:h-auto order-1 md:order-none"></div>
-        <div class="bg-pink-drink-sm md:bg-pink-drink w-full bg-cover bg-center h-96 md:h-auto order-3 md:order-none"></div>
-        <div class="card-box order-4 md:order-none">
-            <h2 class="card-header">Stand out to the right audience</h2>
-            <p class="card-body">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-            <a href="#" class="card-link">Learn more </a>
-        </div>
-        <div class="bg-cherry-sm md:bg-cherry-lg bg-cover min-h-lg md:min-h-md relative order-5 md:order-none">
-            <div class="absolute bottom-10 text-center px-10 opacity-50">
-                <h3 class="pb-4 font-Fraunces text-2xl">Graphic design</h3>
-                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention. </p>
+        <section class="grid grid-cols-1 md:grid-cols-2">
+            <div class="card-box order-2 md:order-none">
+                <h2 class="card-header">Transform your brand</h2>
+                <p class="card-body">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you. </p>
+                <a href="#" class="card-link"><span class="border-transparent border-b-4 hover:border-yellow-300 transition duration-300 ease-out">Learn more</span></a> 
+            </div> 
+            <div class="bg-egg-sm md:bg-egg-lg w-full bg-cover bg-center h-96 md:h-auto order-1 md:order-none"></div>
+            <div class="bg-pink-drink-sm md:bg-pink-drink w-full bg-cover bg-center h-96 md:h-auto order-3 md:order-none"></div>
+            <div class="card-box order-4 md:order-none">
+                <h2 class="card-header">Stand out to the right audience</h2>
+                <p class="card-body">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+                <a href="#" class="card-link"><span class="border-transparent border-b-4 hover:border-red-500 transition duration-300 ease-out">Learn more </span></a>
             </div>
-        </div>
-        <div class="bg-tangerine-sm md:bg-tangerine-lg bg-cover min-h-lg md:min-h-md relative order-6 md:order-none">
-            <div class="absolute bottom-10 text-center px-10 opacity-50">
-                <h3 class="pb-4 font-Fraunces text-2xl">Photography</h3>
-                <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image. </p>
+            <div class="bg-cherry-sm md:bg-cherry-lg bg-cover bg-top min-h-screen md:min-h-md relative order-5 md:order-none">
+                <div class="absolute bottom-10 text-center px-10 opacity-50">
+                    <h3 class="pb-4 font-Fraunces text-3xl font-black">Graphic design</h3>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention. </p>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="bg-tangerine-sm md:bg-tangerine-lg bg-cover bg-top min-h-screen md:min-h-md relative order-6 md:order-none">
+                <div class="absolute bottom-10 text-center px-10 opacity-50">
+                    <h3 class="pb-4 font-Fraunces text-3xl font-black">Photography</h3>
+                    <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image. </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 md:py-32 bg-peach">
+            <h2 class="font-Fraunces uppercase text-center mb-5 md:mb-16 text-2xl tracking-widest opacity-50">Client testimonials</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="client-box">
+                    <img src="./images/image-emily.jpg" alt="emily" class="w-20 rounded-full mb-12">
+                    <p class="client-body">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit. </p>
+                    <h4 class="client-name ">Emily R.</h4>
+                    <h5 class="client-job">Marketing Director</h5>
+                </div>
+                <div class="client-box">
+                    <img src="./images//image-thomas.jpg" alt="thomas" class="w-20 rounded-full mb-12">
+                    <p class="client-body">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience. </p>
+                    <h4 class="client-name ">Thomas S.</h4>
+                    <h5 class="client-job">Chief Operating Officer</h5>
+                </div>
+                <div class="client-box">
+                    <img src="./images/image-jennie.jpg" alt="jennie" class="w-20 rounded-full mb-12">
+                    <p class="client-body">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    <h4 class="client-name ">Jennie F.</h4>
+                    <h5 class="client-job">Business Owner</h5>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 md:grid-cols-4">
+            <picture>
+                <source media="(min-width:769px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+                <source srcset="./images/mobile/image-gallery-milkbottles.jpg">
+                <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle">
+            </picture>
+            <picture>
+                <source media="(min-width:769px)" srcset="./images/desktop/image-gallery-orange.jpg">
+                <source srcset="./images/mobile/image-gallery-orange.jpg">
+                <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
+            </picture>
+            <picture>
+                <source media="(min-width:769px)" srcset="./images/desktop/image-gallery-cone.jpg">
+                <source srcset="./images/mobile/image-gallery-cone.jpg">
+                <img src="./images/desktop/image-gallery-cone.jpg" alt="icecream cone">
+            </picture>
+            <picture>
+                <source media="(min-width:769px)" srcset="./images/desktop/image-gallery-sugar-cubes.jpg">
+                <source srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+                <img src="./images/desktop/image-gallery-sugar-cubes.jpg" alt="sugar cube">
+            </picture>
+        </section>
+        <footer class="bg-light-green flex flex-col py-16 items-center">
+            <h1 class="mb-14 md:mb-5 text-5xl md:text-4xl text-dark-green font-black tracking-wider">sunnyside</h1>
+            <ul class="flex gap-8 mb-20 md:mb-12 text-dark-green opacity-60 text-2xl md:text-base w-full justify-around md:w-auto"> 
+                <li><a href="#" class="hover:text-white">About</a></li>
+                <li><a href="#" class="hover:text-white">Services</a></li>
+                <li><a href="#" class="hover:text-white">Projects</a></li>
+            </ul>
+            <div class="flex gap-8">
+                <img src="./images/icon-facebook.svg" alt="facebook">
+                <img src="./images/icon-instagram.svg" alt="instagram">
+                <img src="./images/icon-twitter.svg" alt="twitter">
+                <img src="./images/icon-pinterest.svg" alt="pinterest">
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
