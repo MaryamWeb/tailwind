@@ -15,7 +15,8 @@ module.exports = {
 				'primary-light': '#fafafa',
 				'primary-dark': '#f4f5f7',
 				'lime-green': 'hsl(136, 65%, 51%)',
-				'bright-cyan': 'hsl(192, 70%, 51%)'
+				'bright-cyan': 'hsl(192, 70%, 51%)',
+				navy: ' hsl(233, 26%, 24%)'
 			}
 		}
 	},
