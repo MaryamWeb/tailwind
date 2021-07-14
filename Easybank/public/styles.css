@@ -21641,6 +21641,10 @@ video {
   fill: currentColor;
 }
 
+.hover\:fill-current:hover{
+  fill: currentColor;
+}
+
 .stroke-current{
   stroke: currentColor;
 }
@@ -33125,6 +33129,43 @@ video {
   padding-bottom: 0.75rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.button:hover{
+  opacity: 0.5;
+}
+
+.button{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-bottom-width: 4px;
+  border-color: transparent;
+}
+
+.link:hover{
+  --tw-border-opacity: 1;
+  border-color: hsla(136, 65%, 51%, var(--tw-border-opacity));
+}
+
+.link{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 640px){
@@ -54118,6 +54159,10 @@ video {
   }
 
   .sm\:fill-current{
+    fill: currentColor;
+  }
+
+  .sm\:hover\:fill-current:hover{
     fill: currentColor;
   }
 
@@ -86155,6 +86200,10 @@ video {
     fill: currentColor;
   }
 
+  .md\:hover\:fill-current:hover{
+    fill: currentColor;
+  }
+
   .md\:stroke-current{
     stroke: currentColor;
   }
@@ -118186,6 +118235,10 @@ video {
   }
 
   .lg\:fill-current{
+    fill: currentColor;
+  }
+
+  .lg\:hover\:fill-current:hover{
     fill: currentColor;
   }
 
@@ -150223,6 +150276,10 @@ video {
     fill: currentColor;
   }
 
+  .xl\:hover\:fill-current:hover{
+    fill: currentColor;
+  }
+
   .xl\:stroke-current{
     stroke: currentColor;
   }
@@ -182254,6 +182311,10 @@ video {
   }
 
   .\32xl\:fill-current{
+    fill: currentColor;
+  }
+
+  .\32xl\:hover\:fill-current:hover{
     fill: currentColor;
   }
 
