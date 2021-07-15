@@ -9,7 +9,7 @@ module.exports = {
 				'bg-phones': "url('./images/image-mockups.png')"
 			}),
 			fontFamily: {
-				Publicsans: [ 'Public+Sans' ]
+				Publicsans: [ 'Public Sans', 'sans-serif' ]
 			},
 			colors: {
 				'primary-light': '#fafafa',

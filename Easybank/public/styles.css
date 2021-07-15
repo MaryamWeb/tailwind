@@ -22834,7 +22834,7 @@ video {
 }
 
 .font-Publicsans{
-  font-family: Public+Sans;
+  font-family: Public Sans, sans-serif;
 }
 
 .text-xs{
@@ -55355,7 +55355,7 @@ video {
   }
 
   .sm\:font-Publicsans{
-    font-family: Public+Sans;
+    font-family: Public Sans, sans-serif;
   }
 
   .sm\:text-xs{
@@ -87393,7 +87393,7 @@ video {
   }
 
   .md\:font-Publicsans{
-    font-family: Public+Sans;
+    font-family: Public Sans, sans-serif;
   }
 
   .md\:text-xs{
@@ -119431,7 +119431,7 @@ video {
   }
 
   .lg\:font-Publicsans{
-    font-family: Public+Sans;
+    font-family: Public Sans, sans-serif;
   }
 
   .lg\:text-xs{
@@ -151469,7 +151469,7 @@ video {
   }
 
   .xl\:font-Publicsans{
-    font-family: Public+Sans;
+    font-family: Public Sans, sans-serif;
   }
 
   .xl\:text-xs{
@@ -183507,7 +183507,7 @@ video {
   }
 
   .\32xl\:font-Publicsans{
-    font-family: Public+Sans;
+    font-family: Public Sans, sans-serif;
   }
 
   .\32xl\:text-xs{
