@@ -1,0 +1,23 @@
+{
+  "name": "practices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/styles.css -o ./public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaryamWeb/tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaryamWeb/tailwind/issues"
+  },
+  "homepage": "https://github.com/MaryamWeb/tailwind#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.4"
+  }
+}
