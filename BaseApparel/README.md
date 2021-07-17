@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:
+- Live Site URL: [Base Apparel](https://tailwindpractice-baseapparel.netlify.app/)
 
 
 ### Screenshot
