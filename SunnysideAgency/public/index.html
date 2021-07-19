@@ -10,8 +10,8 @@
     <script src="./index.js"></script> 
 </head>
 <body class="font-Barlow"> 
-    <div class="max-w-screen-2xl m-auto">
-        <div class="bg-header-sm md:bg-header-lg w-full h-screen bg-cover bg-center text-white">
+    <main class="max-w-screen-2xl m-auto">
+        <section class="bg-header-sm md:bg-header-lg w-full h-screen bg-cover bg-center text-white">
             <nav class="p-8 justify-between items-center hidden md:flex"> 
                 <a href="#" class="text-3xl font-black tracking-wider">sunnyside</a> 
                 <ul class="flex gap-8 items-center text-lg"> 
@@ -24,7 +24,7 @@
             <div class="relative p-8 md:hidden">
                 <nav class="flex justify-between">
                     <a href="#" class="text-2xl font-black tracking-wider">sunnyside</a> 
-                    <button id="menu"><img src="./images//icon-hamburger.svg" alt="menu"></button> 
+                    <button id="menu" aria-label="menu"><img src="./images//icon-hamburger.svg" alt="menu"></button> 
                 </nav>
                 <ul id="nav-sm" class="absolute inset-x-0 flex flex-col gap-6 items-center m-auto bg-peach text-gray-500 py-10 mt-10 w-9/12">
                     <li><a href="#">About</a></li>
@@ -35,7 +35,7 @@
             </div>
             <h1 class="text-6xl font-Fraunces uppercase tracking-widest text-center mt-20">We are creatives</h1>
             <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="mx-auto mt-20">
-        </div> 
+        </section> 
         <section class="grid grid-cols-1 md:grid-cols-2">
             <div class="card-box order-2 md:order-none">
                 <h2 class="card-header">Transform your brand</h2>
@@ -121,6 +121,6 @@
                 <img src="./images/icon-pinterest.svg" alt="pinterest">
             </div>
         </footer>
-    </div>
+    </main>
 </body>
 </html>
