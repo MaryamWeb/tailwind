@@ -7,10 +7,11 @@
     <title>Tailwindcss Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">  
-    <main class="max-w-screen-2xl m-auto px-10" > <!-- Wrapper -->
-        <header>
-            <h1 class="text-gray-500 text-3xl py-6">Tailwindcss practice</h1>
+<body class="bg-gray-100 min-h-screen flex flex-col">  
+    <main class="max-w-screen-2xl m-auto px-14 flex-1"> <!-- Wrapper -->
+        <header class="py-6">
+            <h1 class="text-gray-500 text-3xl pb-3">Tailwindcss practices</h1>
+            <p>Using challenges from <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noreferrer" class="text-primary-pink hover:text-gray-500">Frontend Mentor</a>.</p>
         </header>
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
             <div class="card-box">
@@ -19,8 +20,8 @@
                     <h2 class="card-header">Base Apparel coming soon page</h2>
                     <p class="card-p">This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.</p>
                     <div class="card-button-box">
-                        <a href="https://tailwindpractice-baseapparel.netlify.app/" class="card-button mr-3 p-3">Live Preview</a>
-                        <a href="https://github.com/MaryamWeb/tailwind/tree/main/BaseApparel" class="card-button py-3 px-8">Code</a>
+                        <a href="https://tailwindpractice-baseapparel.netlify.app/" target="_blank" rel="noreferrer" class="card-button mr-3 p-3">Live Preview</a>
+                        <a href="https://github.com/MaryamWeb/tailwind/tree/main/BaseApparel" target="_blank" rel="noreferrer" class="card-button py-3 px-8">Code</a>
                     </div>
                 </div>
             </div>
@@ -30,23 +31,26 @@
                     <h2 class="card-header">Sunnyside agency landing page</h2>
                     <p class="card-p">This challenge will be a perfect test of your layout and responsive skills. There's a tiny bit of JS for the mobile menu, but the focus is HTML & CSS.</p>
                     <div class="card-button-box">
-                        <a href="https://tailwindpractice-sunnysideagency.netlify.app" class="card-button mr-3 p-3">Live Preview</a>
-                        <a href="https://github.com/MaryamWeb/tailwind/tree/main/SunnysideAgency" class="card-button py-3 px-8">Code</a>
+                        <a href="https://tailwindpractice-sunnysideagency.netlify.app" target="_blank" rel="noreferrer" class="card-button mr-3 p-3">Live Preview</a>
+                        <a href="https://github.com/MaryamWeb/tailwind/tree/main/SunnysideAgency" target="_blank" rel="noreferrer" class="card-button py-3 px-8">Code</a>
                     </div>
                 </div>
             </div>
-            <div class="card-box shadow-md hover:shadow-xl transition-all duration-300">
+            <div class="card-box">
                 <img src="./images/easybank-desktop-preview.jpg" alt="Easybank preview" class="card-img">
                 <div class="card-content flex flex-col">
                     <h2 class="card-header">Easybank landing page</h2>
                     <p class="card-p">This challenge will provide a nice test for your layout skills. If you're ready to move up from Junior challenges, this one is a great next step.</p>
                     <div class="card-button-box">
-                        <a href="https://tailwindpractice-easybank.netlify.app/" class="card-button mr-3 p-3">Live Preview</a>
-                        <a href="https://github.com/MaryamWeb/tailwind/tree/main/Easybank" class="card-button py-3 px-8">Code</a>
+                        <a href="https://tailwindpractice-easybank.netlify.app/" target="_blank" rel="noreferrer" class="card-button mr-3 p-3">Live Preview</a>
+                        <a href="https://github.com/MaryamWeb/tailwind/tree/main/Easybank" target="_blank" rel="noreferrer" class="card-button py-3 px-8 ">Code</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
     </main>
+    <footer class="bg-gray-200 py-6 text-center mt-5 text-gray-700">
+        <p>©2021 By Maryam Aljawayed</p>
+    </footer>
 </body>
 </html>
