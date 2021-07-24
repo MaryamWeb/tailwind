@@ -12,7 +12,7 @@
 	@apply p-4 flex-1 relative;
 }
 .card-header {
-	@apply text-gray-600 text-2xl py-4 font-bold;
+	@apply text-gray-600 text-lg md:text-2xl py-4 font-bold;
 }
 .card-p {
 	@apply mb-14;
@@ -21,5 +21,5 @@
 	@apply py-6 absolute bottom-0;
 }
 .card-button {
-	@apply bg-primary-pink rounded-full text-white hover:bg-red-200 transition-all duration-300 hover:shadow-inner;
+	@apply text-primary-pink hover:underline p-0 md:bg-primary-pink md:rounded-full md:text-white md:hover:bg-red-200 md:hover:no-underline transition-all duration-300 md:hover:shadow-inner;
 }
